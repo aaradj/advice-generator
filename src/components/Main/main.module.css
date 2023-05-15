@@ -1,13 +1,13 @@
 .card {
-  width: 525px;
-  height: 40vh;
+  width: 530px;
+  height: 38vh;
   padding: 3rem 2rem;
   border-radius: 15px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 2.5rem;
   background-color: rgb(50, 58, 73);
   box-shadow: 0 3px 4px 7px rgba(10, 10, 10, 0.1);
   text-align: center;
