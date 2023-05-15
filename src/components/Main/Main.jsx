@@ -4,7 +4,7 @@ import styles from "./main.module.css";
 
 
 function Main() {
-    const [data,setData] = useState("click to get Advice")
+    const [data,setData] = useState("")
     const [click,setClick] = useState(false)
     const handleClick = () => {
         setClick(!click)
@@ -14,9 +14,8 @@ function Main() {
             await axios.get("https://api.adviceslip.com/advice")
             .then(response=>{
                 setData(response.data.slip.advice)
-                console.log(data)
             })
-            .catch(err=>{
+            .catch(()=>{
                 console.log("somthing went wrong")
             })
         }
@@ -32,4 +31,3 @@ function Main() {
 }
 
 export default Main;
-
